@@ -1,4 +1,4 @@
-package day8;
+package dataDrivenTesting;
 
 import java.util.ArrayList;
 import java.util.List;

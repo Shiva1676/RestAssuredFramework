@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="verizonCompany.RestAssured_GetMethod">
+      <class name="dataDrivenTesting.DataDrivenTesting">
         <methods>
-          <include name="verifyGetMethod"/>
+          <include name="startBrowser"/>
+          <include name="test" invocation-numbers="0 1 3"/>
         </methods>
-      </class> <!-- verizonCompany.RestAssured_GetMethod -->
+      </class> <!-- dataDrivenTesting.DataDrivenTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

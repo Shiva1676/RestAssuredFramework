@@ -8,14 +8,33 @@ import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
 
-public class OAuth2 {
+public class OAuth3 {
 
-	String OAuthToken = "a03cbeec8ffd7995a192e5a3fa4e022d57451319";
+	String OAuthToken = "";
 
-	@Test
+	@Test(priority = 0)
+	public void generateToken() {
+
+		Response res = given().log().all().formParam("client_id", "RestAssuredAPI_OAUTH2.0_Aug")
+				.formParam("client_secret", "27b8b4c22af7c0d5d39f7e2b7fa5d9a6")
+				.formParam("grant_type", "client_credentials").post("http://coop.apps.symfonycasts.com/token");
+
+		String data = res.body().asString();
+
+		System.out.println("Token generated" + data);
+
+		JsonPath path = new JsonPath(data);
+
+		OAuthToken = path.get("access_token");
+
+		System.out.println("Access token generated" + " " + OAuthToken);
+
+	}
+
+	@Test(priority = 1)
 	public void testEndPointWithOutToken() {
 
-		Response response = given().post("http://coop.apps.symfonycasts.com/api/361/eggs-count");
+		Response response = given().log().all().post("http://coop.apps.symfonycasts.com/api/361/eggs-count");
 
 		String data = response.body().asString();
 
@@ -32,10 +51,10 @@ public class OAuth2 {
 		System.out.println(response.getTime());
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void testEndPointWithToken() {
 
-		Response response = given().auth().oauth2(OAuthToken)
+		Response response = given().log().all().auth().oauth2(OAuthToken)
 				.post("http://coop.apps.symfonycasts.com/api/361/eggs-count");
 
 		String data = response.body().asString();
@@ -48,7 +67,7 @@ public class OAuth2 {
 
 		JsonPath path = new JsonPath(data);
 
-		String validation = path.get("success");
+		String validation = path.get("success").toString();
 
 		Assert.assertEquals(validation, "true", "Test Failed because validation are not matched");
 

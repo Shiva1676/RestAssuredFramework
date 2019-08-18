@@ -21,7 +21,7 @@ public class Features {
 		list = new ArrayList<String>();
 	}
 
-	@XmlElement(name = "Features")
+	@XmlElement(name = "Feature")
 	public List<String> getList() {
 		return list;
 	}

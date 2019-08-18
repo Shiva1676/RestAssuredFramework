@@ -8,6 +8,7 @@ import static io.restassured.RestAssured.given;
 import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
+import junit.framework.Assert;
 
 /**
  * @author Lenovo
@@ -23,6 +24,11 @@ public class OAuth_Get {
 				.get("https://api.twitter.com/1.1/statuses/user_timeline.json?count=5");
 		
 		System.out.println(response.body().asString());
+		
+		int statusCode = response.statusCode();
+		
+		Assert.assertEquals(200, statusCode);
+		
 
 	}
 }

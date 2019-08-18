@@ -23,9 +23,9 @@ public class PostingDataUsingXML {
 
 		Laptop laptop = new Laptop();
 
-		laptop.setBrandName("Lenovo");
-		laptop.setId("103");
-		laptop.setLaptopName("Lenovo");
+		laptop.setBrandName("Lenovo121");
+		laptop.setId("104");
+		laptop.setLaptopName("LenovoAdvance121");
 
 		Features feature = new Features();
 
@@ -35,7 +35,7 @@ public class PostingDataUsingXML {
 		data.add("12TB Hard Drive");
 
 		feature.setList(data);
-		laptop.setFeature(feature);
+		laptop.setFeatures(feature);
 
 		int statusCode = given().contentType(ContentType.XML).accept(ContentType.XML).body(laptop)
 				.post("http://localhost:8080/laptop-bag/webapi/api/add").statusCode();

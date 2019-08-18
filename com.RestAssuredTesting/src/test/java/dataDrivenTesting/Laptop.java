@@ -1,10 +1,12 @@
 /**
  * 
  */
-package day8;
+package dataDrivenTesting;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+
+import com.fasterxml.jackson.annotation.JsonFormat.Features;
 
 /**
  * @author Lenovo
@@ -20,7 +22,7 @@ public class Laptop {
 	private String LaptopName;
 
 	private Features features;
-
+	
 	@XmlElement(name = "Features")
 	public Features getFeatures() {
 		return features;
@@ -48,7 +50,7 @@ public class Laptop {
 		Id = id;
 	}
 
-	@XmlElement(name = "LaptopName")
+	@XmlElement(name= "LaptopName")
 	public String getLaptopName() {
 		return LaptopName;
 	}
