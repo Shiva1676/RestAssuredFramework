@@ -21,6 +21,8 @@ public class WAP_StringDuplicate {
 		String str = "Welcome to java hello java hello";
 
 		String arr[] = str.split(" ");
+		
+//		System.out.println(arr.toString());
 
 		Map<String, Integer> map = new HashMap<String, Integer>();
 
@@ -45,7 +47,7 @@ public class WAP_StringDuplicate {
 
 			if (element.getValue()==1) {
 
-				System.out.println(element.getValue());
+				System.out.println(element.getKey());
 			}
 		}
 	}
