@@ -14,7 +14,7 @@ public class WAP_ReplacingNumber {
 
 		String str = "Welcome to java World9";
 		
-		String replace = str.replaceAll("[0-9]", "");
+		String replace = str.replaceAll("[^0-9]", "");
 		
 		System.out.println(replace);
 		

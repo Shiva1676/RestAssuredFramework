@@ -19,6 +19,8 @@ import io.restassured.http.ContentType;
  */
 public class PostingDataUsingJsonObject {
 
+	
+	
 	@Test
 	public void postData() {
 

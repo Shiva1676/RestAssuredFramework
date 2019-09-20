@@ -25,8 +25,12 @@ public class Demo {
 		JsonPath path = new JsonPath(data);
 
 		OAuthToken = path.get("access_token");
+		
+		String token = path.get("token_type");
 
 		System.out.println("Access token generated" + " "+ OAuthToken);
 
+		System.out.println("Token type" + " " +token);
+		
 	}
 }

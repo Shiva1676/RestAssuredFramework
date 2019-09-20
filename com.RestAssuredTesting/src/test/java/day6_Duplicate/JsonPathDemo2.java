@@ -28,7 +28,9 @@ public class JsonPathDemo2 {
 
 		JsonPath json = new JsonPath(data);
 
-		Object ob = json.getJsonObject("base");
+//		Object ob = json.getJsonObject("base");
+		
+		String ob = json.get("base");
 
 		System.out.println(ob);
 
