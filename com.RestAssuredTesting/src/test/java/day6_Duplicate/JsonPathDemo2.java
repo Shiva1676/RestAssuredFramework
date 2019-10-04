@@ -31,6 +31,10 @@ public class JsonPathDemo2 {
 //		Object ob = json.getJsonObject("base");
 		
 		String ob = json.get("base");
+		
+//		Object lon = json.get("coord.lonf");
+//		
+//		System.out.println(lon);
 
 		System.out.println(ob);
 

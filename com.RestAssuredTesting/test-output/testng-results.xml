@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="565" started-at="2019-09-20T04:06:38Z" finished-at="2019-09-20T04:06:38Z">
+  <suite name="Default suite" duration-ms="2473" started-at="2019-09-20T04:19:53Z" finished-at="2019-09-20T04:19:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="565" started-at="2019-09-20T04:06:38Z" finished-at="2019-09-20T04:06:38Z">
-      <class name="demo.Test1">
-        <test-method status="PASS" signature="testData()[pri:0, instance:demo.Test1@3aeaafa6]" name="testData" duration-ms="546" started-at="2019-09-20T04:06:38Z" finished-at="2019-09-20T04:06:38Z">
+    <test name="Default test" duration-ms="2473" started-at="2019-09-20T04:19:53Z" finished-at="2019-09-20T04:19:56Z">
+      <class name="day6_Duplicate.JsonPathDemo2">
+        <test-method status="PASS" signature="verifyJsonExpression()[pri:0, instance:day6_Duplicate.JsonPathDemo2@3aeaafa6]" name="verifyJsonExpression" duration-ms="2457" started-at="2019-09-20T04:19:53Z" finished-at="2019-09-20T04:19:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testData -->
-      </class> <!-- demo.Test1 -->
+        </test-method> <!-- verifyJsonExpression -->
+      </class> <!-- day6_Duplicate.JsonPathDemo2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
