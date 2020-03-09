@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2473" started-at="2019-09-20T04:19:53Z" finished-at="2019-09-20T04:19:56Z">
+  <suite name="Default suite" duration-ms="2369" started-at="2020-03-01T14:24:45Z" finished-at="2020-03-01T14:24:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2473" started-at="2019-09-20T04:19:53Z" finished-at="2019-09-20T04:19:56Z">
-      <class name="day6_Duplicate.JsonPathDemo2">
-        <test-method status="PASS" signature="verifyJsonExpression()[pri:0, instance:day6_Duplicate.JsonPathDemo2@3aeaafa6]" name="verifyJsonExpression" duration-ms="2457" started-at="2019-09-20T04:19:53Z" finished-at="2019-09-20T04:19:56Z">
+    <test name="Default test" duration-ms="2369" started-at="2020-03-01T14:24:45Z" finished-at="2020-03-01T14:24:47Z">
+      <class name="day5_Duplicate.PostMethod">
+        <test-method status="PASS" signature="getLaptopData()[pri:0, instance:day5_Duplicate.PostMethod@4eb7f003]" name="getLaptopData" duration-ms="2333" started-at="2020-03-01T14:24:45Z" finished-at="2020-03-01T14:24:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyJsonExpression -->
-      </class> <!-- day6_Duplicate.JsonPathDemo2 -->
+        </test-method> <!-- getLaptopData -->
+      </class> <!-- day5_Duplicate.PostMethod -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

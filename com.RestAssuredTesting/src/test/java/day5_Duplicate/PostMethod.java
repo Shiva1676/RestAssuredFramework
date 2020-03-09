@@ -16,7 +16,7 @@ import static io.restassured.RestAssured.*;
  */
 public class PostMethod {
 
-	@Test(enabled = false)
+	@Test
 	public void addDataThroughPostMethod() {
 
 		int statusCode = given().contentType(ContentType.JSON).accept(ContentType.JSON)
@@ -32,7 +32,7 @@ public class PostMethod {
 	@Test
 	public void getLaptopData(){
 		
-		String data = given().get(" http://localhost:8080/laptop-bag/webapi/api/all").body().asString();
+		String data = given().get("http://localhost:8080/laptop-bag/webapi/api/all").body().asString();
 		
 		System.out.println(data);
 		

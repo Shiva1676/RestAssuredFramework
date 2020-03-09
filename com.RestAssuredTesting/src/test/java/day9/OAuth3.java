@@ -28,6 +28,24 @@ public class OAuth3 {
 		OAuthToken = path.get("access_token");
 
 		System.out.println("Access token generated" + " " + OAuthToken);
+		
+		
+		Response response = given().log().all().auth().oauth2(OAuthToken)
+				.post("http://coop.apps.symfonycasts.com/api/361/eggs-count");
+
+		String data1 = response.body().asString();
+
+		System.out.println(response.statusCode());
+
+		System.out.println(data1);
+
+		System.out.println(response.getTime());
+
+		JsonPath path1 = new JsonPath(data1);
+
+		String validation = path1.get("success").toString();
+
+		Assert.assertEquals(validation, "true", "Test Failed because validation are not matched");
 
 	}
 
