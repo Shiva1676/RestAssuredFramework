@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2369" started-at="2020-03-01T14:24:45Z" finished-at="2020-03-01T14:24:47Z">
+  <suite name="Default suite" duration-ms="2870" started-at="2020-03-09T19:54:19Z" finished-at="2020-03-09T19:54:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2369" started-at="2020-03-01T14:24:45Z" finished-at="2020-03-01T14:24:47Z">
-      <class name="day5_Duplicate.PostMethod">
-        <test-method status="PASS" signature="getLaptopData()[pri:0, instance:day5_Duplicate.PostMethod@4eb7f003]" name="getLaptopData" duration-ms="2333" started-at="2020-03-01T14:24:45Z" finished-at="2020-03-01T14:24:47Z">
+    <test name="Default test" duration-ms="2870" started-at="2020-03-09T19:54:19Z" finished-at="2020-03-09T19:54:22Z">
+      <class name="day3_ResponseSpecBuilderAndPostAPI.PostAPI">
+        <test-method status="PASS" signature="reteriveTokenID()[pri:0, instance:day3_ResponseSpecBuilderAndPostAPI.PostAPI@4eb7f003]" name="reteriveTokenID" duration-ms="2854" started-at="2020-03-09T19:54:19Z" finished-at="2020-03-09T19:54:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getLaptopData -->
-      </class> <!-- day5_Duplicate.PostMethod -->
+        </test-method> <!-- reteriveTokenID -->
+      </class> <!-- day3_ResponseSpecBuilderAndPostAPI.PostAPI -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

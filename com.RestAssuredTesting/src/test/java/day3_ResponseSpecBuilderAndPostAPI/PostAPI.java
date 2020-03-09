@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
 /**
  * @author Lenovo This script is all about how to send the data through post
  *         call Created by: Ganesh Created on: 29-02-2020
@@ -54,6 +55,17 @@ public class PostAPI {
 		.accept(ContentType.JSON)
 		.body(new File(System.getProperty("user.dir")+"/Credentials.json"))
 		.post("/auth").asString();
+		
+
+		/*Response data = given()
+		.contentType(ContentType.JSON)
+		.accept(ContentType.JSON)
+		.body(new File(System.getProperty("user.dir")+"/Credentials.json"))
+		.post("/auth");
+		
+		String responseBody = data.prettyPrint();
+		
+		System.out.println(responseBody);*/
 		
 		JsonPath path = new JsonPath(data);
 		
